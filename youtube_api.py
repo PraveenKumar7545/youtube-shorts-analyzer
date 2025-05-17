@@ -4,7 +4,8 @@ import googleapiclient.errors
 from datetime import datetime, timedelta
 import random
 import re
-
+from dotenv import load_dotenv
+load_dotenv()
 # Setup API client
 def get_youtube_api():
     """Initialize the YouTube API client."""
