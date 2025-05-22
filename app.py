@@ -3,12 +3,18 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import re
+import streamlit as st
+
+
 from datetime import datetime
 
 from youtube_api import get_video_data, get_trending_shorts
 from data_processor import process_video_data, extract_features
 from model import predict_engagement
 from utils import is_shorts_url, extract_video_id, format_number
+
+
+st.title("YouTube Shorts Analyzer")
 
 # Page configuration
 st.set_page_config(
